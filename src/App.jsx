@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Tour from './pages/Tour';
 import About from './pages/About';
 import CardDetail from './pages/CardDetail';
+import NotFound from './components/NotFound';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
             <Route path='/Tour' element={<Tour/>}/>
             <Route path='/About' element={<About/>}/>
             <Route path='/card_detail/:id' element={<CardDetail/>}/>
+            <Route path='*' element={<NotFound/>}/>
           </Routes>
         </main>
 
